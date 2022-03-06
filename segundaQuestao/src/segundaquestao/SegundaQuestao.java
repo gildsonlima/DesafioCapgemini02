@@ -17,29 +17,29 @@ public class SegundaQuestao {
      */
     public static void main(String[] args) {
         
-        int[] n = {1, 5, 3, 4, 2};
-        int x = 0,cont = 0;
+        int[] n = {1, 5, 3, 4, 2};                                                          //Declarando o vetor predefinido para exemplo podendo ser mudado
+        int x = 0,cont = 0;                                                                 //Declarandoa a variavel que ser usada para medir a diferenca
         
-        x = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da difereça."));
+        x = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da difereça."));   //Atribuindo valor a variavel x para usar para media a diferença
         
-        System.out.println(x);
+        System.out.println(x);                                                              //Imprimindo a variavel x para teste de fucionamento da atribuição
         
-        for (int j = 0; j < n.length; j++) 
+        for (int j = 0; j < n.length; j++)                                                  //Estrutura de repetição usado para valor o valor a referencia para medir a diferença com os outros
         {
-            for (int i = 0; i < n.length; i++) 
+            for (int i = 0; i < n.length; i++)                                              //Estrutura de repetição usada para mudar o valor que vai ser medido a diferença com o valor referencia
             {
-                if(x == (n[i]-n[j]))
+                if(i!=j)                                                                    //Estrutura de condicional para evitar a comparação de numeros na mesma posição
                 {
-                    if(i!=j)
+                    if(x == (n[j]-n[i]))if(i!=j)                                            //Estrutura de condicional verificar de os dois numero tem a deferença igual a informada e contabilizar
                     {
                         cont++; 
-                        System.out.println(cont+" pares");
+                        System.out.println("["+n[i]+","+n[j]+"]");                          //Imprimindo o valore que tem a diferença igual a informada
                     }
                 }
             }
         }
         
-        JOptionPane.showMessageDialog(null, "Exitem "+cont+" pares de numeros com essa diferença entre eles.");
+        JOptionPane.showMessageDialog(null, "Exitem "+cont+" pares de numeros com essa diferença entre eles."); //Mostrando o numero de pares
         
     }
     
