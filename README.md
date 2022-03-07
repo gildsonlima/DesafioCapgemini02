@@ -19,11 +19,11 @@ Para isso criei um algoritmo que ultiliza duas estruturas de repetição uma par
 
 Entrada
 
-![alt](img/entrada_Diferen%C3%A7a.jpg)
+![alt](img/entrada_Diferença.jpg)
 
 Saida
 
-![alt](img/saida_Diferen%C3%A7a.jpg)
+![alt](img/saida_Diferença.jpg)
 
 No terceiro desafio foi pedido a criação de um algoritmo que encriptasse uma string segindo um metodo informado
 
